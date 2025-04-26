@@ -1,7 +1,5 @@
 # Python 3 Formation 2
 
-![Elonet](https://elonet.fr/img/logo.png)
-
 # 1 - Pourquoi l'objet ?
 
 Il est tout à fait possible de réaliser un programme sans l'utilisation des objets, mais c'est se priver d'une des forces du langage et bien souvent on perd plus de temps à programmer un programme sans objets qu'avec.
