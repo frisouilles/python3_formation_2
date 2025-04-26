@@ -793,8 +793,25 @@ Cela implique qu’il faut fournir tous les arguments obligatoires.</p>
 <h2 id="héritage-multiple">Héritage multiple</h2>
 <p>Il est possible d’hériter de plusieurs classes.<br>
 Prenons l’exemple d’un smartphone, c’est à la fois un téléphone est un ordinateur.</p>
-<div class="mermaid"><svg xmlns="http://www.w3.org/2000/svg" id="mermaid-svg-rIMngplvchGkUpfP" width="100%" style="max-width: 404.5px;" viewBox="0 0 404.5 210"><g transform="translate(-12, -12)"><g class="output"><g class="clusters"></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M102.515625,92L102.515625,117L147.44390368852459,142" marker-end="url(#arrowhead122)" style="fill:none"></path><defs><marker id="arrowhead122" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M321.765625,92L321.765625,117L276.8373463114754,142" marker-end="url(#arrowhead123)" style="fill:none"></path><defs><marker id="arrowhead123" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="A" transform="translate(102.515625,56)" style="opacity: 1;"><rect rx="0" ry="0" x="-82.515625" y="-36" width="165.03125" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-72.515625,-26)"><foreignObject width="145.03125" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Téléphone</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="B" transform="translate(321.765625,56)"><rect rx="0" ry="0" x="-86.734375" y="-36" width="173.46875" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-76.734375,-26)"><foreignObject width="153.46875" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Ordinateur</div></foreignObject></g></g></g><g class="node" style="opacity: 1;" id="C" transform="translate(212.140625,178)"><rect rx="0" ry="0" x="-95.53125" y="-36" width="191.0625" height="72"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-85.53125,-26)"><foreignObject width="171.0625" height="52"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">Smartphone</div></foreignObject></g></g></g></g></g></g></svg></div>
-<h3 id="exemple-2">Exemple</h3>
+<pre class="mermaid">
+graph TD
+  A[Personnage]
+  B[Humanoïde]
+  C[Monstre]
+  D[Mage]
+  E[Guerrier]
+  F[Demogorgon]
+  G[Mage Blanc]
+  H[Mage Noir]
+  A --> B
+  A --> C
+  B --> D
+  B --> E
+  C --> F
+  D --> G
+  D --> H
+</pre>
+      <h3 id="exemple-2">Exemple</h3>
 <pre class=" language-python"><code class="prism  language-python"><span class="token keyword">class</span> <span class="token class-name">Telephone</span><span class="token punctuation">:</span>
     <span class="token keyword">def</span> <span class="token function">__init__</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> numero<span class="token punctuation">)</span><span class="token punctuation">:</span>
         self<span class="token punctuation">.</span>numero <span class="token operator">=</span> numero
