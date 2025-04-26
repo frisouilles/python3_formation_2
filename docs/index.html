@@ -654,14 +654,14 @@ La méthode contient le paramètre <code>self</code> ainsi que la valeur fournie
 <p>On parle alors d’héritage, un classe enfant hérite des attributs et des méthodes d’une classe parent.<br>
 Un concept simple, mais extrêmement puissant.</p>
 <p>On peut imaginer l’héritage comme un arbre de spécialisations</p>
-<div class="mermaid">
-  graph TD
+<pre class="mermaid">
+  flowchart TD
     A[Téléphone]
     B[Ordinateur]
     C[Smartphone]
     A --> C
     B --> C
-</div>
+</pre>
       <h2 id="déclaration-2">Déclaration</h2>
 <p>Pour déclarer un héritage, il suffit d’ajouter <code>(&lt;class_parent&gt;)</code> à suite du nom d’une classe.<br>
 On dira que notre classe hérite (ou dérive) la classe parent</p>
